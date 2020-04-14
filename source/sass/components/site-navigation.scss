@@ -17,4 +17,10 @@
         color: #F9FBFD;
       }
     }
+}
+
+@media(max-width: 1024px) {
+  .site-navigation {
+    width: 500px;
   }
+}

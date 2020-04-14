@@ -23,4 +23,18 @@
       margin: 0;
       padding: 0;
     }
+}
+
+@media (max-width: 1024px) {
+  .about-us {
+    padding: 0 calc(50vw - 339px);
+    img {
+      width: 324px;
+      height: 264px;
+      object-fit: cover;
+    }
+    &__promo {
+      width: 324px;
+    }
   }
+}

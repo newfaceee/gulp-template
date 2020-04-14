@@ -6,3 +6,9 @@ body {
     font-weight: 400;
     color: #011C40;
 }
+@media (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+    
+}
