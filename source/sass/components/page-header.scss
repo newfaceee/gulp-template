@@ -1,0 +1,38 @@
+.page-header {
+    box-sizing: border-box;
+    
+    padding: 0 calc(50vw - 580px);
+    padding-top: 35px;
+  
+    height: 650px;
+  
+    background-image: url("../img/main-bg-desktop.jpg");
+    background-size: cover;
+  
+    color: #fff;
+    margin-bottom: 108px;
+    
+    .main-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 210px;
+      
+    }
+    .promo {
+      margin-left: 95px;
+      &__title {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 30px;
+        font-size: 54px;
+        font-weight: 700;
+      }
+      &__description {
+        margin: 0;
+        padding: 0;
+  
+        font-size: 20px;
+      }
+    }
+}

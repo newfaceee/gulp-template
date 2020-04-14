@@ -1,0 +1,22 @@
+.page-footer {
+    padding: 0 calc(50vw - 580px);
+    height: 138px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #011C40;
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .social-list {
+      width: 120px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+  
+    }
+  }

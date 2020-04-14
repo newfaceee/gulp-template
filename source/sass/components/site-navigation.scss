@@ -1,0 +1,20 @@
+.site-navigation {
+    margin: 0;
+    padding: 0;
+  
+    width: 595px;
+    
+    display: flex;
+    justify-content: space-between;
+    
+    list-style: none;
+  
+    font-weight: 500;
+  
+    .site-navigation-item {
+      a {
+        text-decoration: none;
+        color: #F9FBFD;
+      }
+    }
+  }

@@ -1,0 +1,87 @@
+.reservation {
+    padding: 0 calc(50vw - 580px);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("../img/form-bg-desktop.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    &__title {
+      margin: 0;
+      margin-top: 175px;
+      padding: 0;
+      font-size: 40px;
+      font-weight: 700;
+    }
+    &__description {
+      margin: 0;
+      padding: 0;
+      font-size: 18px;
+    }
+    &__form {
+      width: 403px;
+      height: 455px;
+      box-sizing: border-box;
+      padding: 50px;
+      background-color: #011C40;
+      color:#F9FBFD;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      input {
+        border: none;
+        box-sizing: border-box;
+        padding: 16px;
+        font-size: 14px;
+        color: #011C40;
+        background-color: #F9FBFD;
+      }
+      label {
+        font-size: 10px;
+      }
+    }
+    &__text {
+      margin: 0;
+      padding: 0;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .checkbox {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 23px;
+      position: relative;
+
+      & input:checked ~ .checkbox__text::after {
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        left: 0;
+        top: 2.5px;
+        background-image: url("../img/icon-check.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      
+      }
+      &__text {
+        
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 2.5px;
+          width: 18px;
+          height: 18px;
+          background-color: #F9FBFD;
+        }
+      }
+    }
+
+  }

@@ -1,3 +1,18 @@
-h1 {
-  color: red;
-}
+@import "./components/body.scss";
+@import "./components/visually-hidden.scss";
+@import "./components/button.scss";
+@import "./components/site-navigation.scss";
+@import "./components/page-header.scss";
+@import "./components/page-footer.scss";
+@import "./components/about-us.scss";
+@import "./components/advantages.scss";
+@import "./components/catalog.scss";
+@import "./components/reservation.scss";
+@import "./components/info.scss";
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: 400;
+};
+
+
