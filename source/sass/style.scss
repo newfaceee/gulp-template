@@ -1,3 +1,4 @@
+@import "./components/fonts.scss";
 @import "./components/body.scss";
 @import "./components/visually-hidden.scss";
 @import "./components/button.scss";
@@ -9,10 +10,6 @@
 @import "./components/catalog.scss";
 @import "./components/reservation.scss";
 @import "./components/info.scss";
-@font-face {
-  font-family: 'Montserrat';
-  src: url("../fonts/Montserrat-Regular.ttf");
-  font-weight: 400;
-};
+
 
 
