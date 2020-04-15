@@ -2,6 +2,9 @@
     padding: 0 calc(50vw - 580px);
     margin-bottom: 120px;
     &__title {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 35px;
       text-align: center;
       font-size: 28px;
       font-weight: 600;
@@ -88,13 +91,28 @@
 
     &__item {
       width: 309px;
-      height: 386px;
 
       img {
         width: 309px;
-        height: 386px;
       }
     }
   }
-  
+}
+
+@media(max-width: 767px) {
+  .catalog {
+    padding: 0 calc(50vw - 145px);
+    &__item {
+      margin: 0 auto;
+      width: 270px;
+      margin-bottom: 30px;
+
+      img {
+        width: 270px;
+      }
+    }
+    &__list {
+      display: block;
+    }
+  }
 }

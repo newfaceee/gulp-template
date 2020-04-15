@@ -89,6 +89,27 @@
       flex-direction: column;
       justify-content: center;
     }
+  }
+}
 
+@media(max-width: 767px) {
+  .info {
+    padding: 0 calc(50vw - 145px);
+    flex-direction: column;
+
+    .map {
+      width: 290px;
+      img {
+        width: 290px;
+        height: 316px;
+      }
+    }
+    .contacts {
+      max-width: 290px;
+      order: -1;
+      &__title {
+        max-width: 290px;
+      }
+    }
   }
 }

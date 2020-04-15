@@ -7,8 +7,6 @@
     box-sizing: border-box;
     padding: 0 calc(50vw - 580px);
     margin-bottom: 132px;
-
-    background-color: #F9FBFD;
     &__promo {
       width:512px;
     }
@@ -35,6 +33,26 @@
     }
     &__promo {
       width: 324px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .about-us {
+    padding: 0 calc(50vw - 145px);
+    margin-bottom: 65px;
+    display: block;
+    img {
+      width: 290px;
+      height: 186px;
+    }
+    &__promo {
+      max-width: 290px;
+      margin-bottom: 35px;
+    }
+    &__title {
+      font-size: 24px;
+      margin-bottom: 25px;
     }
   }
 }

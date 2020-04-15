@@ -11,7 +11,7 @@
   
     font-weight: 500;
   
-    .site-navigation-item {
+    &-item {
       a {
         text-decoration: none;
         color: #F9FBFD;
@@ -22,5 +22,17 @@
 @media(max-width: 1024px) {
   .site-navigation {
     width: 500px;
+  }
+}
+@media(max-width: 767px) {
+  .site-navigation {
+    max-width: 290px;
+    flex-direction: column;
+    &-item {
+      margin-bottom: 25px;
+      a {
+        color: #011C40;
+      }
+    }
   }
 }
