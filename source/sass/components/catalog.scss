@@ -1,5 +1,6 @@
 .catalog {
-    padding: 0 calc(50vw - 580px);
+    padding-left: 60px;
+    padding-right: 60px;
     margin-bottom: 120px;
     &__title {
       margin: 0;
@@ -87,7 +88,8 @@
 
 @media(max-width: 1024px) {
   .catalog {
-    padding: 0 calc(50vw - 339px);
+    padding-right: 45px;
+    padding-left: 45px;
 
     &__item {
       width: 309px;
@@ -101,7 +103,8 @@
 
 @media(max-width: 767px) {
   .catalog {
-    padding: 0 calc(50vw - 145px);
+    padding-left: 15px;
+    padding-right: 15px;
     &__item {
       margin: 0 auto;
       width: 270px;
@@ -110,9 +113,7 @@
       img {
         width: 270px;
       }
-    }
-    &__list {
-      display: block;
+
     }
   }
 }
