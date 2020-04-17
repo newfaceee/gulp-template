@@ -1,109 +1,103 @@
 .advantages {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    padding: 120px 103px;
+  padding: 120px 103px;
 
+  min-height: 562px;
+  box-sizing: border-box;
+  position: relative;
+  background: #e3ecf6;
 
-    min-height: 562px;
-    box-sizing: border-box;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../img/advantages-bg-desktop@1x.jpg");
+    background-size: cover;
+    z-index: 1;
+    opacity: 0.1;
+  }
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &__list {
     position: relative;
-    margin-bottom: 100px;
-    background: #E3ECF6;
-
-   
-    .advantages::before {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url("../img/advantages-bg-desktop.jpg");
-      background-size: cover;
-      z-index: 1;
-      opacity: .1;
-    }
-    &__title {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    z-index: 2;
+  }
+  &__item {
+    width: auto;
+    // min-width: 360px;
+    min-height: 240px;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 80px;
+    padding-bottom: 45px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-right: 40px;
+    background: #f9fbfd;
+    h4 {
       margin: 0;
       padding: 0;
-      font-size: 28px;
-      font-weight: 600;
-      text-align: center;
-      margin-bottom: 60px;
+      font-size: 18px;
+      margin-bottom: 5px;
     }
-    &__list {
-      position: relative;
-      z-index: 2;
+    p {
       margin: 0;
       padding: 0;
-      list-style: none;
-
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: nowrap;
+      font-size: 14px;
     }
-    &__item {
-      width: auto;
-      // min-width: 360px;
-      min-height: 240px;
-      position: relative;
-      box-sizing: border-box;
-      padding-top: 80px;
-      padding-bottom: 45px;
-      padding-left: 25px;
-      padding-right: 25px;
-      margin-right: 40px;
-      background: #F9FBFD;
-      h4 {
-        margin: 0;
-        padding: 0;
-        font-size: 18px;
-        margin-bottom: 5px;
-      }
-      p {
-        margin: 0;
-        padding: 0;
-        font-size: 14px;
-      }
-    }
-    &__item:last-child {
-      margin-right: 0px;
-    }
-    &__item::before {
-      position: absolute;
-      content: "";
-      top: 30px;
-      left: 30px;
-    } 
-    &__item--liner::before {
-      background: url("../../img/icon-liner.svg") no-repeat center;
-      width: 27px;
-      height: 32px;
-    }
-    &__item--all-inclusive::before {
-      background: url("../../img/icon-all-inclusive.svg") no-repeat center;
-      width: 38px;
-      height: 21px;
-    }
-    &__item--boat::before {
-      background: url("../../img/icon-boat.svg") no-repeat center;
-      width: 42px;
-      height: 15px;
-    }
-
+  }
+  &__item:last-child {
+    margin-right: 0px;
+  }
+  &__item::before {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 30px;
+  }
+  &__item--liner::before {
+    background: url("../../img/icon-liner.svg") no-repeat center;
+    width: 27px;
+    height: 32px;
+  }
+  &__item--all-inclusive::before {
+    background: url("../../img/icon-all-inclusive.svg") no-repeat center;
+    width: 38px;
+    height: 21px;
+  }
+  &__item--boat::before {
+    background: url("../../img/icon-boat.svg") no-repeat center;
+    width: 42px;
+    height: 15px;
+  }
 }
 
-@media(max-width: 1023px) {
+@media (max-width: 1023px) {
   .advantages {
     padding: 95px 45px;
-    
+
     &__item {
       min-width: 206px;
       margin-right: 30px;
       padding: 70px 15px 20px;
-      
     }
     &__item--liner::before {
       width: 21px;
@@ -119,14 +113,15 @@
     }
   }
 }
-@media(min-width: 1367px) {
+@media (min-width: 1367px) {
   .advantages {
     padding: 0 calc(50vw - 580px);
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .advantages {
-    
     padding: 65px 15px;
 
     &__list {
@@ -134,7 +129,7 @@
     }
     &__item {
       margin: 0;
-      
+
       min-width: 290px;
       min-height: 249px;
       padding: 70px 20px 25px;

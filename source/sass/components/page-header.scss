@@ -1,74 +1,80 @@
 .page-header {
+  box-sizing: border-box;
+  padding: 35px 103px 0px 103px;
+  margin-bottom: 108px;
+
+  min-height: 650px;
+  min-width: 320px;
+
+  background-image: url("../../img/main-bg-desktop@1x.jpg");
+  background-color: #3978b5;
+  background-size: cover;
+
+  color: #fff;
+
+  .main-nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 210px;
     box-sizing: border-box;
-    padding: 35px 103px 0px 103px;
-    margin-bottom: 108px;
-
-    min-height: 650px;
-    min-width: 320px;
-
-    background-image: url("../img/main-bg-desktop.jpg");
-    background-size: cover;
-  
-    color: #fff;
-    
-    
-    .main-nav {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 210px;
-      box-sizing: border-box;
-      &__toggle {
+    &__toggle {
+      position: absolute;
+      width: 24px;
+      height: 14px;
+      background: transparent;
+      top: 20px;
+      right: 15px;
+      border: 0;
+      visibility: hidden;
+      opacity: 0;
+      &::before {
         position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
         width: 24px;
         height: 14px;
-        background: transparent;
-        top: 20px;
-        right: 15px;
-        border: 0;
-        visibility: hidden;
-        opacity: 0;
-        &::before {
-          position: absolute;
-          content: "";
-          top: 0;
-          left: 0;
-          width: 24px;
-          height: 14px;
-        }
       }
     }
-    .main-nav--closed .main-nav__toggle::before {
-      background: url("../../img/icon-burger.svg");
-    }
-    .main-nav--opened .main-nav__toggle::before {
-      background: url("../../img/icon-close.svg") no-repeat center;
-    }
-    .promo {
-      margin-left: 95px;
-      &__title {
-        margin: 0;
-        padding: 0;
-        margin-bottom: 30px;
+  }
+  .main-nav--closed .main-nav__toggle::before {
+    background: url("../../img/icon-burger.svg");
+  }
+  .main-nav--opened .main-nav__toggle::before {
+    background: url("../../img/icon-close.svg") no-repeat center;
+  }
+  .promo {
+    margin-left: 95px;
+    &__title {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 30px;
 
-        font-size: 54px;
-        font-weight: 700;
-      }
-      &__description {
-        margin: 0;
-        padding: 0;
-  
-        font-size: 20px;
-      }
+      font-size: 54px;
+      font-weight: 700;
     }
+    &__description {
+      margin: 0;
+      padding: 0;
+
+      font-size: 20px;
+    }
+  }
+}
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .page-header {
+    background-image: url("../../img/main-bg-desktop@2x.jpg");
+    background-size: cover;
+  }
 }
 @media (max-width: 1024px) {
   .page-header {
     padding: 35px 60px 0px 60px;
     margin-bottom: 100px;
 
-    background-image: url("../../img/main-bg-tablet.jpg");
+    background-image: url("../../img/main-bg-tablet@1x.jpg");
     .main-nav {
       .logo {
         img {
@@ -82,18 +88,20 @@
     }
   }
 }
-@media(min-width: 1367px) {
+@media (max-width: 1024px) and (min-resolution: 144dpi),
+  (max-width: 1024px) and (min-resolution: 1.5dppx) {
   .page-header {
-    padding: 0 calc(50vw - 580px);
-    padding-top: 35px;
+    background-image: url("../../img/main-bg-tablet@2x.jpg");
   }
 }
-@media(max-width: 767px) {
+
+@media (max-width: 767px) {
   .page-header {
     padding: 0 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-image: url("../../img/main-bg-mobile@1x.jpg");
     .main-nav {
       margin: 0;
       padding: 20px 15px 0px 15px;
@@ -117,19 +125,26 @@
         display: none;
       }
       &--opened {
-        background-color: #F9FBFD;
+        background-color: #f9fbfd;
+        .logo {
+          svg {
+            path {
+              fill: #011c40;
+            }
+          }
+        }
       }
       &--opened .site-navigation-item {
         display: block;
         a {
-          color: #011C40;
+          color: #011c40;
         }
       }
       &--nojs {
         position: static;
-        background-color: #F9FBFD;
+        background-color: #f9fbfd;
       }
-      &--nojs .site-navigation-item{
+      &--nojs .site-navigation-item {
         display: block;
       }
       &--nojs .main-nav__toggle {
@@ -138,11 +153,6 @@
     }
     .logo {
       margin-bottom: 30px;
-      svg {
-        path {
-          fill: #011C40;
-        }
-      }
     }
     .promo {
       &__title {
@@ -150,6 +160,16 @@
       }
     }
   }
-
-  
+}
+@media (max-width: 767px) and (min-resolution: 144dpi),
+  (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .page-header {
+    background-image: url("../../img/main-bg-mobile@2x.jpg");
+  }
+}
+@media (min-width: 1366px) {
+  .page-header {
+    padding: 0 calc(50vw - 580px);
+    padding-top: 35px;
+  }
 }
