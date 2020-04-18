@@ -15,16 +15,16 @@
 .site-navigation-item {
   a {
     text-decoration: none;
-    color: #f9fbfd;
+    color: $primary-color;
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: $tablet-width) {
   .site-navigation {
     max-width: 500px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: $mobile-width) {
   .site-navigation {
     max-width: 290px;
     flex-direction: column;

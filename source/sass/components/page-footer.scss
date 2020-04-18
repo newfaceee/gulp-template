@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #011C40;
+    background-color: $secondary-color;
     .social-list {
       width: 120px;
       margin: 0;
@@ -29,7 +29,7 @@
     }
 }
 
-@media(max-width: 1023px) {
+@media(max-width: $tablet-width) {
   .page-footer {
     padding-left: 45px;
     padding-right: 45px;
@@ -41,12 +41,12 @@
     }
   }
 }
-@media(min-width: 1367px) {
+@media(min-width: $desktop-max-width) {
   .page-footer{
     padding: 0 calc(50vw - 580px);
   }
 }
-@media(max-width: 767px) {
+@media(max-width: $mobile-width) {
   .page-footer {
     height: auto;
     min-height: 285px;

@@ -29,8 +29,8 @@
   min-height: 455px;
   box-sizing: border-box;
   padding: 50px;
-  background-color: #011c40;
-  color: #f9fbfd;
+  background-color: $secondary-color;
+  color: $primary-color;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -40,8 +40,8 @@
     box-sizing: border-box;
     padding: 16px;
     font-size: 14px;
-    color: #011c40;
-    background-color: #f9fbfd;
+    color: $secondary-color;
+    background-color: $primary-color;
     margin-bottom: 20px;
   }
   label {
@@ -85,21 +85,21 @@
     top: 2.5px;
     width: 18px;
     height: 18px;
-    background-color: #f9fbfd;
+    background-color: $primary-color;
 }
-@media (min-width: 1367px) {
+@media (min-width: $desktop-max-width) {
   .reservation {
     padding: 0 calc(50vw - 580px);
     padding-bottom: 50px;
     padding-top: 50px;
   }
 }
-@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .reservation {
     background-image: url("../../img/form-bg-desktop@2x.jpg");
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: $tablet-width) {
   .reservation {
     padding-left: 45px;
     padding-right: 45px;
@@ -123,13 +123,13 @@
     width: auto;
   }
 }
-@media (max-width: 1024px) and (min-resolution: 144dpi),
-  (max-width: 1024px) and (min-resolution: 1.5dppx) {
+@media (max-width: $tablet-width) and (min-resolution: $retina-dpi),
+  (max-width: $tablet-width) and (min-resolution: $retina-dppx) {
   .reservation {
     background-image: url("../../img/form-bg-tablet@2x.jpg");
   }
 }
-@media (max-width: 767px) {
+@media (max-width: $mobile-width) {
   .reservation {
     padding: 65px 15px;
     background-image: url("../../img/form-bg-mobile@1x.jpg");
@@ -149,8 +149,8 @@
     padding: 35px 30px 40px 40px;
   }
 }
-@media (max-width: 768px) and (min-resolution: 144dpi),
-  (max-width: 768px) and (min-resolution: 1.5dppx) {
+@media (max-width: $mobile-width) and (min-resolution: $retina-dpi),
+  (max-width: $mobile-width) and (min-resolution: $retina-dppx) {
   .reservation {
     background-image: url("../../img/form-bg-mobile@2x.jpg");
   }

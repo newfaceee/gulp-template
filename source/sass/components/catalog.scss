@@ -28,7 +28,7 @@
   left: 30px;
   font-size: 18px;
   position: absolute;
-  color: #f9fbfd;
+  color: $primary-color;
   z-index: 10;
 }
 .catalog__item {
@@ -44,7 +44,7 @@
     height: 386px;
     top: 0;
     left: 0;
-    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011c40 100%);
+    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, $secondary-color 100%);
   }
   .details {
     box-sizing: border-box;
@@ -62,7 +62,7 @@
     top: 0px;
     font-size: 18px;
     font-weight: 600;
-    background: #011c40;
+    background: $secondary-color;
     color: #fff;
 
     display: flex;
@@ -85,14 +85,14 @@
     padding: 0;
   }
 }
-@media (min-width: 1367px) {
+@media (min-width: $desktop-max-width) {
   .catalog {
     padding: 0 calc(50vw - 580px);
     padding-top: 120px;
     padding-bottom: 120px;
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: $tablet-width) {
   .catalog {
     padding: 0 45px;
   }
@@ -101,7 +101,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $mobile-width) {
   .catalog {
     padding: 65px 15px;
   }

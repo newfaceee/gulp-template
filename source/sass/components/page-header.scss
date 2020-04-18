@@ -63,19 +63,19 @@
     font-size: 20px;
   }
 }
-@media (min-width: 1366px) {
+@media (min-width: $desktop-max-width) {
   .page-header {
     padding: 0 calc(50vw - 580px);
     padding-top: 35px;
   }
 }
-@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .page-header {
     background-image: url("../../img/main-bg-desktop@2x.jpg");
     background-size: cover;
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: $tablet-width) {
   .page-header {
     padding: 35px 60px 0px 60px;
     margin-bottom: 100px;
@@ -94,14 +94,14 @@
     }
   }
 }
-@media (max-width: 1023px) and (min-resolution: 144dpi),
-  (max-width: 1024px) and (min-resolution: 1.5dppx) {
+@media (max-width: $tablet-width) and (min-resolution: $retina-dpi),
+  (max-width: $tablet-width) and (min-resolution: $retina-dppx) {
   .page-header {
     background-image: url("../../img/main-bg-tablet@2x.jpg");
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $mobile-width) {
   .page-header {
     // padding: 0 15px;
     padding: 0;
@@ -132,12 +132,12 @@
         flex-direction: column;
       }
       &--opened {
-        background-color: #f9fbfd;
+        background-color: $primary-color;
         a {
-          color: #011c40;
+          color: $secondary-color;
           svg {
             path {
-              fill: #011c40;
+              fill: $secondary-color;
             }
           }
         }
@@ -148,12 +148,12 @@
       }
       &--nojs {
         position: static;
-        background-color: #f9fbfd;
+        background-color: $primary-color;
         a {
-          color: #011c40;
+          color: $secondary-color;
           svg {
             path {
-              fill: #011c40;
+              fill: $secondary-color;
             }
           }
         }
@@ -184,8 +184,8 @@
     }
   }
 }
-@media (max-width: 767px) and (min-resolution: 144dpi),
-  (max-width: 767px) and (min-resolution: 1.5dppx) {
+@media (max-width: $mobile-width) and (min-resolution: $retina-dpi),
+  (max-width: $mobile-width) and (min-resolution: $retina-dppx) {
   .page-header {
     background-image: url("../../img/main-bg-mobile@2x.jpg");
   }

@@ -4,10 +4,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    background-color: #F9FBFD;
-    color: #011C40;
+    background-color: $primary-color;
+    color: $secondary-color;
 }
-@media (max-width: 1024px) {
+@media (max-width: $tablet-width) {
     body {
         font-size: 14px;
     }

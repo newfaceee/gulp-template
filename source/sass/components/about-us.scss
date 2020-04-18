@@ -24,12 +24,12 @@
   padding: 0;
 }
 
-@media (min-width: 1367px) {
+@media (min-width: $desktop-max-width) {
   .about-us {
     padding: 0 calc(50vw - 580px);
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: $tablet-width) {
   .about-us {
     padding: 0 45px;
     img {
@@ -44,7 +44,7 @@
     min-width: 325px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: $mobile-width) {
   .about-us {
     margin: 0;
     padding: 0px 15px 65px 15px;
