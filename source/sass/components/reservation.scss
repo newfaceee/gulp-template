@@ -1,158 +1,176 @@
 .reservation {
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-image: url("../..//img/form-bg-desktop@1x.jpg");
+  box-sizing: border-box;
+  padding: 50px 163px;
+  background-image: url("../../img/form-bg-desktop@1x.jpg");
+  background-color: #b0d8fa;
   background-size: cover;
+  min-height: 555px;
+  min-width: 320px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+  font-size: 18px;
+  color: $primary-color;
 }
 .reservation__promo {
+  margin-right: 144px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: $secondary-color;
 }
 .reservation__title {
   margin: 0;
   padding: 0;
   font-size: 40px;
   font-weight: 700;
+  margin-bottom: 15px;
 }
 .reservation__description {
   margin: 0;
   padding: 0;
-  font-size: 18px;
+  line-height: 1.5;
 }
-.reservation__form {
-  width: 403px;
+.form {
+  max-width: 403px;
   min-height: 455px;
-  box-sizing: border-box;
-  padding: 50px;
   background-color: $secondary-color;
-  color: $primary-color;
+  box-sizing: border-box;
+  padding: 45px 50px 50px 50px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-
-  input {
-    border: none;
-    box-sizing: border-box;
-    padding: 16px;
-    font-size: 14px;
-    color: $secondary-color;
-    background-color: $primary-color;
-    margin-bottom: 20px;
-  }
-  label {
-    font-size: 10px;
-  }
-  .checkbox {
-    margin-bottom: 30px;
-  }
 }
 .reservation__text {
   margin: 0;
-  margin-bottom: 30px;
   padding: 0;
-  font-size: 18px;
   font-weight: 500;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+.form__group {
+  margin-bottom: 18px;
+}
+.form input {
+  width: 100%;
+  border: 0;
+  background-color: $primary-color;
+  box-sizing: border-box;
+  padding: 15px;
+  color: $secondary-color;
+}
+.form input::placeholder {
+  font-family: "Montserrat";
+  color: $secondary-color;
 }
 .checkbox {
+  font-size: 10px;
   cursor: pointer;
+}
+.checkbox__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+}
+.checkbox__text {
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 23px;
+  min-height: 18px;
   display: flex;
   align-items: center;
-  box-sizing: border-box;
-  padding: 5px 0px 5px 23px;
-  position: relative;
-    
-    & input:checked ~ .checkbox__text::after {
-      content: "";
-      position: absolute;
-      width: 18px;
-      height: 18px;
-      left: 0;
-      top: 2.5px;
-      background-image: url("../img/icon-check.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-}
-.checkbox__text::before {
-    content: "";
+  letter-spacing: 0.5px;
+  &::before {
     position: absolute;
-    left: 0;
-    top: 2.5px;
+    content: "";
     width: 18px;
     height: 18px;
+    left: 0px;
     background-color: $primary-color;
-}
-@media (min-width: $desktop-max-width) {
-  .reservation {
-    padding: 0 calc(50vw - 580px);
-    padding-bottom: 50px;
-    padding-top: 50px;
   }
+  &::after {
+    display: none;
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    left: 0;
+    background: url("../../img/icon-check.svg") no-repeat center;
+  }
+}
+.checkbox__input:checked + .checkbox__text::after {
+  display: block;
+}
+.reservation-btn {
+  min-height: 43px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin-top: auto;
 }
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .reservation {
-    background-image: url("../../img/form-bg-desktop@2x.jpg");
-  }
+  background-image: url("../../img/form-bg-desktop@2x.jpg");
 }
 @media (max-width: $tablet-width) {
   .reservation {
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 95px 45px;
+    padding-bottom: 75px;
     flex-direction: column;
-    background-image: url("../../img/form-bg-tablet@1x.jpg");
+    align-items: center;
+    min-height: 805px;
   }
   .reservation__promo {
-    text-align: center;
-  }
-  .reservation__title {
     margin: 0;
     padding: 0;
-    margin-bottom: 25px;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .reservation__title {
+    margin-bottom: 8px;
+    font-size: 34px;
   }
   .reservation__description {
-    margin-bottom: 60px;
-  }
-  .reservation__form {
-    width: auto;
+    text-align: center;
   }
 }
 @media (max-width: $tablet-width) and (min-resolution: $retina-dpi),
   (max-width: $tablet-width) and (min-resolution: $retina-dppx) {
-  .reservation {
-    background-image: url("../../img/form-bg-tablet@2x.jpg");
-  }
+  background-image: url("../../img/form-bg-tablet@2x.jpg");
 }
 @media (max-width: $mobile-width) {
   .reservation {
-    padding: 65px 15px;
-    background-image: url("../../img/form-bg-mobile@1x.jpg");
+    padding: 60px 15px;
+    align-items: initial;
+    min-height: 760px;
+  }
+  .reservation__promo {
+    margin-bottom: 30px;
   }
   .reservation__title {
+    text-align: center;
     font-size: 24px;
     margin-bottom: 15px;
   }
   .reservation__description {
+    text-align: center;
     font-size: 16px;
-    margin-bottom: 35px;
   }
-  .reservation__form {
-    width: auto;
-    min-width: 290px;
-    min-height: 460px;
-    padding: 35px 30px 40px 40px;
+  .form {
+    max-width: 100%;
+    padding: 30px;
+    padding-bottom: 35px;
   }
 }
 @media (max-width: $mobile-width) and (min-resolution: $retina-dpi),
   (max-width: $mobile-width) and (min-resolution: $retina-dppx) {
-  .reservation {
-    background-image: url("../../img/form-bg-mobile@2x.jpg");
-  }
+  background-image: url("../../img/form-bg-mobile@2x.jpg");
 }
-
+@media (min-resolution: 1367px) {
+  padding: 0 calc(50vw - 580px);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+}
