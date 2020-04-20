@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: $secondary-color;
+
   .social-list {
     width: 120px;
     margin: 0;
@@ -15,6 +16,7 @@
     justify-content: space-between;
     align-items: center;
   }
+
   .navigation {
     display: flex;
     flex-direction: row;
@@ -31,50 +33,62 @@
     padding-left: 45px;
     padding-right: 45px;
     height: 120px;
+
     .navigation {
       font-size: 14px;
+
       .logo {
         margin-right: 25px;
         width: 38px;
         height: 20px;
+
         svg {
           width: 38px;
           height: 20px;
         }
       }
+
       .site-navigation {
         max-width: 440px;
       }
+
       .site-navigation-item {
         font-size: 12px;
       }
     }
+
     .social-list {
       width: 88px;
     }
   }
 }
+
 @media (min-width: $desktop-max-width) {
   .page-footer {
     padding: 0 calc(50vw - 580px);
   }
 }
+
 @media (max-width: $mobile-width) {
   .page-footer {
     height: 283px;
     padding: 40px 15px;
     flex-direction: column;
     align-items: flex-start;
+
     .navigation {
       flex-direction: column;
       align-items: flex-start;
+
       .logo {
         margin: 0;
         margin-bottom: 30px;
       }
+
       .site-navigation {
         max-width: 290px;
       }
+
       .site-navigation-item {
         margin-bottom: 16px;
       }

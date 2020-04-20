@@ -11,6 +11,7 @@
 
   font-weight: 500;
 }
+
 .site-navigation-item {
   a {
     text-decoration: none;
@@ -23,11 +24,13 @@
     max-width: 504px;
   }
 }
+
 @media (max-width: $mobile-width) {
   .site-navigation {
     max-width: 290px;
     flex-direction: column;
   }
+
   .site-navigation-item {
     margin-bottom: 25px;
   }

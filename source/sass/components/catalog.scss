@@ -1,10 +1,12 @@
 .catalog {
   padding: 102px 103px 90px 103px;
+
   &__item:hover .details {
     visibility: visible;
     opacity: 1;
   }
 }
+
 .catalog__title {
   margin: 0;
   padding: 0;
@@ -13,6 +15,7 @@
   font-size: 28px;
   font-weight: 600;
 }
+
 .catalog__list {
   margin: 0;
   padding: 0;
@@ -21,6 +24,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 .catalog__name {
   margin: 0;
   padding: 0;
@@ -31,16 +35,19 @@
   color: $primary-color;
   z-index: 10;
 }
+
 .catalog__item {
   position: relative;
   font-weight: 500;
   margin-bottom: 30px;
   width: 260px;
   height: 386px;
+
   img {
     width: 100%;
     height: 100%;
   }
+
   &::after {
     position: absolute;
     content: "";
@@ -48,16 +55,12 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(
-      180deg,
-      rgba(1, 28, 64, 0) 50%,
-      $secondary-color 100%
-    );
+    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, $secondary-color 100%);
   }
+
   .details {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
     padding: 25px 25px 40px;
     list-style: none;
     min-height: 386px;
@@ -65,11 +68,11 @@
     z-index: 15;
     visibility: hidden;
     opacity: 0;
-    top: 0px;
+    top: 0;
     font-size: 18px;
     font-weight: 600;
     background: $secondary-color;
-    color: #fff;
+    color: #ffffff;
 
     display: flex;
     flex-direction: column;
@@ -79,27 +82,32 @@
   .details__name {
     margin-bottom: 18px;
   }
+
   .details__item {
     font-size: 14px;
     font-weight: 400;
     margin: 0;
     padding: 0;
     margin-bottom: 13px;
+
     &:last-child {
       margin-bottom: 0;
       margin-top: auto;
     }
   }
+
   .details__title {
     margin: 0;
     padding: 0;
   }
+
   .details__description {
     margin: 0;
     padding: 0;
     line-height: 1.5;
   }
 }
+
 @media (min-width: $desktop-max-width) {
   .catalog {
     width: 1366px;
@@ -111,15 +119,19 @@
     padding-bottom: 91px;
   }
 }
+
 @media (max-width: $tablet-width) {
   .catalog {
     padding: 0 45px;
   }
+
   .catalog__list {
     margin-bottom: 70px;
   }
+
   .catalog__item {
     min-width: 309px;
+
     .details {
       padding: 30px 35px 35px 35px;
     }
@@ -130,20 +142,25 @@
   .catalog {
     padding: 0 15px;
   }
+
   .catalog__list {
     margin-bottom: 35px;
   }
+
   .catalog__item {
     min-width: 270px;
     margin-bottom: 30px;
+
     .details {
       padding: 30px 25px 35px 25px;
     }
   }
+
   .catalog__title {
     font-size: 24px;
     margin-bottom: 33px;
   }
+
   .catalog__name {
     top: 344px;
     left: 25px;

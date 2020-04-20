@@ -2,16 +2,19 @@
   box-sizing: border-box;
   padding: 120px 103px;
   display: flex;
+
   .map {
     width: 560px;
     height: 306px;
     margin-right: 100px;
+
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
   }
+
   .contacts {
     max-width: 500px;
     display: flex;
@@ -19,6 +22,7 @@
     box-sizing: border-box;
     padding-top: 75px;
   }
+
   .contacts__title {
     margin: 0;
     padding: 0;
@@ -26,6 +30,7 @@
     margin-bottom: 35px;
     line-height: 1.5;
   }
+
   .contacts__info {
     margin: 0;
     padding: 0;
@@ -43,42 +48,51 @@
       left: 0;
     }
   }
+
   .address::before {
     width: 18px;
     height: 22px;
     background-image: url("../../img/icon-pointer.svg");
   }
+
   .phone::before {
     width: 18px;
     height: 18px;
     background-image: url("../../img/icon-phone.svg");
   }
 }
+
 @media (max-width: $tablet-width) {
   .info {
     padding: 100px 45px;
     justify-content: space-between;
+
     .map {
       height: 335px;
       margin-right: 30px;
     }
+
     .contacts {
       padding-top: 67px;
     }
   }
+
   .address::before {
     top: 0;
   }
 }
+
 @media (max-width: $mobile-width) {
   .info {
     padding: 65px 15px;
     padding-top: 58px;
     flex-direction: column;
+
     .map {
       width: 100%;
       order: 2;
     }
+
     .contacts {
       padding: 0;
       max-width: 100%;
