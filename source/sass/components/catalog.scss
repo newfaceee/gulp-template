@@ -1,7 +1,6 @@
 .catalog {
   box-sizing: border-box;
   padding: 115px 118px 125px 118px;
-
 }
 
 .catalog__title {
@@ -11,7 +10,6 @@
   font-weight: 600;
   text-align: center;
   margin-bottom: 50px;
-
 }
 
 .catalog__list {
@@ -59,7 +57,7 @@
 .details {
   box-sizing: border-box;
   margin: 0;
-  padding:35px 24px 31px 25px;
+  padding: 35px 24px 31px 25px;
 
   width: 100%;
   min-height: 386px;
@@ -82,7 +80,7 @@
   visibility: hidden;
   opacity: 0;
 
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .details__item {
@@ -152,7 +150,7 @@
   .catalog__title {
     font-size: 24px;
   }
-  
+
   .catalog__list {
     flex-direction: column;
   }
