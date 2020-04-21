@@ -196,9 +196,10 @@
   background-image: url("../../img/form-bg-mobile@2x.jpg");
 }
 
-@media (min-resolution: 1367px) {
-  padding: 0 calc(50vw - 580px);
-  padding-top: 50px;
-  padding-bottom: 50px;
-  justify-content: center;
+@media (min-width: $desktop-max-width) {
+  .reservation {
+    padding: 0 calc(50vw - 580px);
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }

@@ -100,3 +100,11 @@
     }
   }
 }
+
+@media (min-width: $desktop-max-width) {
+  .info {
+    padding: 0 calc(50vw - 580px);
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}

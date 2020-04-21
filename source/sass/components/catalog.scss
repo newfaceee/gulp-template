@@ -40,12 +40,11 @@
   position: relative;
   font-weight: 500;
   margin-bottom: 30px;
-  width: 260px;
+  max-width: 260px;
   height: 386px;
 
   img {
-    width: 100%;
-    height: 100%;
+    object-fit: cover;
   }
 
   &::after {
@@ -59,10 +58,12 @@
   }
 
   .details {
+
     box-sizing: border-box;
     margin: 0;
     padding: 25px 25px 40px;
     list-style: none;
+    max-width: 260px;
     min-height: 386px;
     position: absolute;
     z-index: 15;

@@ -1,5 +1,5 @@
 .advantages {
-  padding: 98px 103px 120px 103px;
+  padding: 115px 103px 120px 103px;
 
   min-height: 562px;
   box-sizing: border-box;
@@ -100,7 +100,6 @@
 @media (max-width: $tablet-width) {
   .advantages {
     padding: 94px 45px;
-    margin-bottom: 92px;
     min-height: 588px;
   }
 
@@ -136,10 +135,7 @@
 
 @media (max-width: $mobile-width) {
   .advantages {
-    padding-top: 15px;
-    padding-bottom: 65px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px 15px 35px 15px;
     margin-bottom: 30px;
   }
 
@@ -160,5 +156,13 @@
     text-align: none;
     font-size: 24px;
     margin-bottom: 38px;
+  }
+}
+
+@media (min-width: $desktop-max-width) {
+  .advantages {
+    padding: 0 calc(50vw - 580px);
+    padding-top: 115px;
+    padding-bottom: 120px;
   }
 }

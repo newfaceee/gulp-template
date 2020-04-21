@@ -71,15 +71,6 @@
     font-size: 20px;
   }
 }
-// @media (min-width: $desktop-max-width) {
-//   .page-header {
-//     padding: 0;
-//     padding: 33px 103px 0px 103px;
-//     width: 1366px;
-//     margin: 0 auto;
-//     margin-bottom: 120px;
-//   }
-// }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .page-header {
@@ -238,5 +229,12 @@
   (max-width: $mobile-width) and (min-resolution: $retina-dppx) {
   .page-header {
     background-image: url("../../img/main-bg-mobile@2x.jpg");
+  }
+}
+
+@media (min-width: $desktop-max-width) {
+  .page-header {
+    padding: 0 calc(50vw - 580px);
+    padding-top: 35px;
   }
 }
