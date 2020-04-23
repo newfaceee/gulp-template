@@ -680,8 +680,8 @@ body {
   font-size: 18px;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: all .5s;
-  transition: all .5s; }
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
 
 .details__item {
   font-size: 14px;
