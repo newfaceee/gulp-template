@@ -606,7 +606,7 @@ body {
 .catalog {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 115px 118px 125px 118px; }
+  padding: 115px 103px 125px 103px; }
 
 .catalog__title {
   margin: 0;
@@ -636,6 +636,8 @@ body {
   .catalog__item img {
     width: 100%;
     height: 386px; }
+  .catalog__item:nth-child(4n) {
+    margin-right: 0px; }
   .catalog__item::after {
     position: absolute;
     content: "";
