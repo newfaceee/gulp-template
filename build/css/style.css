@@ -1,3 +1,13 @@
+.content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: calc(100vh - 138px); }
+
 img {
   max-width: 100%;
   height: auto; }
@@ -25,7 +35,7 @@ img {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   background-color: #f9fbfd;
@@ -83,6 +93,12 @@ body {
 .site-navigation-item a {
   text-decoration: none;
   color: #f9fbfd; }
+
+.site-navigation-item:hover {
+  opacity: 0.8; }
+
+.site-navigation-item:focus {
+  outline: 1px solid #345C92; }
 
 @media (max-width: 1023px) {
   .site-navigation {
@@ -508,7 +524,7 @@ body {
   z-index: 2; }
   .advantages__item:last-child {
     margin-right: 0; }
-  .advantages__item h4 {
+  .advantages__item h3 {
     margin: 0;
     padding: 0;
     font-size: 18px;
@@ -825,7 +841,14 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 15px;
-  color: #011c40; }
+  color: #011c40;
+  outline: 0; }
+
+.form input:hover {
+  background-color: #e2e2e2; }
+
+.form input:focus {
+  border: 1px solid #345C92; }
 
 .form input::-webkit-input-placeholder {
   font-family: "Montserrat", sans-serif;
@@ -1019,6 +1042,9 @@ body {
     width: 18px;
     height: 22px;
     background-image: url("../../img/icon-pointer.svg"); }
+  .info .phone {
+    text-decoration: none;
+    color: #011c40; }
   .info .phone::before {
     width: 18px;
     height: 18px;

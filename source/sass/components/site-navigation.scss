@@ -19,6 +19,14 @@
   }
 }
 
+.site-navigation-item:hover {
+  opacity: 0.8;
+}
+
+.site-navigation-item:focus {
+  outline: 1px solid #345C92;
+}
+
 @media (max-width: $tablet-width) {
   .site-navigation {
     max-width: 504px;

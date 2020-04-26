@@ -54,7 +54,10 @@
     height: 22px;
     background-image: url("../../img/icon-pointer.svg");
   }
-
+  .phone {
+    text-decoration: none;
+    color: $secondary-color;
+  }
   .phone::before {
     width: 18px;
     height: 18px;

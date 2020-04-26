@@ -63,6 +63,16 @@
   box-sizing: border-box;
   padding: 15px;
   color: $secondary-color;
+  outline: 0;
+
+}
+
+.form input:hover {
+  background-color:#e2e2e2;
+}
+
+.form input:focus {
+  border: 1px solid #345C92;
 }
 
 .form input::placeholder {
