@@ -749,7 +749,7 @@ body {
 
 @media (min-width: 1367px) {
   .catalog {
-    padding: 0 calc(50vw - 580px);
+    padding: 0 calc(50vw - 565px);
     padding-top: 115px;
     padding-bottom: 125px; } }
 
