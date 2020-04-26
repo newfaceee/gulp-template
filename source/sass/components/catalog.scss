@@ -138,7 +138,13 @@
 
   .catalog__item {
     min-width: 309px;
+    margin: 0;
+    margin-right: 30px;
     margin-bottom: 30px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
   }
 
   .details {
@@ -162,6 +168,8 @@
 
   .catalog__item {
     min-width: 260px;
+    margin: 0;
+    margin-bottom: 30px;
   }
 
   .details {
@@ -175,7 +183,7 @@
 
 @media (min-width: $desktop-max-width) {
   .catalog {
-    padding: 0 calc(50vw - 565px);
+    padding: 0 calc(50vw - 580px);
     padding-top: 115px;
     padding-bottom: 125px;
   }

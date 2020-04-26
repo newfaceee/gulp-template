@@ -8,11 +8,7 @@ body {
   color: $secondary-color;
 }
 
-.site__wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: calc(100vh - 138px);
-}
+
 
 @media (max-width: $tablet-width) {
   body {
