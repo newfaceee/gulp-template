@@ -1,0 +1,27 @@
+.main-nav__toggle {
+  position: absolute;
+  width: 24px;
+  height: 14px;
+  background: transparent;
+  top: 20px;
+  right: 15px;
+  border: 0;
+  visibility: hidden;
+  opacity: 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 14px;
+  }
+}
+ 
+@media(max-width: $mobile-width) {
+  .main-nav__toggle {
+    visibility: visible;
+    opacity: 1;
+  }
+}

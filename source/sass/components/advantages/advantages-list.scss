@@ -1,0 +1,13 @@
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+ 
+@media(max-width: $mobile-width) {
+  .advantages__list {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,59 @@
+.reservation {
+  box-sizing: border-box;
+  padding: 50px 163px;
+  background-image: url("../img/form-bg-desktop@1x.jpg");
+  background-color: #b0d8fa;
+  background-size: cover;
+  min-height: 555px;
+  min-width: 320px;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 18px;
+  color: $primary-color;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .reservation {
+    background-image: url("../img/form-bg-desktop@2x.jpg");
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .reservation {
+    padding: 95px 45px;
+    padding-bottom: 75px;
+    flex-direction: column;
+    align-items: center;
+    min-height: 805px;
+  }
+}
+
+@media (max-width: $tablet-width) and (min-resolution: $retina-dpi),
+  (max-width: $tablet-width) and (min-resolution: $retina-dppx) {
+    .reservation {
+      background-image: url("../img/form-bg-tablet@2x.jpg");
+    }
+}
+
+@media (max-width: $mobile-width) {
+  .reservation {
+    padding: 60px 15px;
+    align-items: initial;
+    min-height: 760px;
+  }
+}
+
+@media (max-width: $mobile-width) and (min-resolution: $retina-dpi),
+  (max-width: $mobile-width) and (min-resolution: $retina-dppx) {
+    .reservation {
+      background-image: url("../img/form-bg-mobile@2x.jpg");
+    }
+}
+
+@media (min-width: $desktop-max-width) {
+  .reservation {
+    padding: 0 calc(50vw - 580px);
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

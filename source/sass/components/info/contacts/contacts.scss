@@ -1,0 +1,22 @@
+.contacts {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 75px;
+}
+
+@media(max-width: $tablet-width) {
+  .contacts {
+    max-width: 324px;
+    padding-top: 67px;
+  }
+}
+
+@media(max-width: $mobile-width) {
+  .contacts {
+    padding: 0;
+    max-width: 100%;
+    order: 1;
+  }
+}

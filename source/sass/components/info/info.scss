@@ -1,0 +1,30 @@
+.info {
+  box-sizing: border-box;
+  padding: 120px 103px;
+  display: flex;
+
+}
+
+@media (max-width: $tablet-width) {
+  .info {
+    padding: 100px 45px;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .info {
+    padding: 65px 15px;
+    padding-top: 58px;
+    flex-direction: column;
+
+  }
+}
+
+@media (min-width: $desktop-max-width) {
+  .info {
+    padding: 0 calc(50vw - 580px);
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}

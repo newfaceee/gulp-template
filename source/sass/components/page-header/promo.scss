@@ -1,0 +1,15 @@
+.promo {
+  margin-left: 95px;
+}
+
+@media(max-width: $tablet-width) {
+  .promo {
+    margin: 0;
+  }
+}
+
+@media(max-width: $mobile-width) {
+  .promo {
+    padding: 0 15px;
+  }
+}

@@ -4,11 +4,58 @@
 @import "./components/body.scss";
 @import "./components/visually-hidden.scss";
 @import "./components/button.scss";
-@import "./components/site-navigation.scss";
-@import "./components/page-header.scss";
-@import "./components/page-footer.scss";
-@import "./components/about-us.scss";
-@import "./components/advantages.scss";
-@import "./components/catalog.scss";
-@import "./components/reservation.scss";
-@import "./components/info.scss";
+//site-navigation
+@import "./components/site-navigation/site-navigation.scss";
+@import "./components/site-navigation/site-navigation-item.scss";
+//page-header
+@import "./components/page-header/page-header.scss";
+@import "./components/page-header/main-nav-toggle.scss";
+@import "./components/page-header/main-nav.scss";
+@import "./components/page-header/promo.scss";
+@import "./components/page-header/promo-description.scss";
+@import "./components/page-header/promo-title.scss";
+//page-footer
+@import "./components/page-footer/page-footer.scss";
+@import "./components/page-footer/navigation.scss";
+@import "./components/page-footer/social-list.scss";
+@import "./components/page-footer/social-list-item.scss";
+//about-us
+@import "./components/about-us/about-us.scss";
+@import "./components/about-us/about-us-description.scss";
+@import "./components/about-us/about-us-promo.scss";
+@import "./components/about-us/about-us-title.scss";
+//advantages
+@import "./components/advantages/advantages.scss";
+@import "./components/advantages/advantages-item.scss";
+@import "./components/advantages/advantages-list.scss";
+@import "./components/advantages/advantages-title.scss";
+//catalog
+@import "./components/catalog/catalog.scss";
+@import "./components/catalog/catalog-item.scss";
+@import "./components/catalog/catalog-list.scss";
+@import "./components/catalog/catalog-name.scss";
+@import "./components/catalog/catalog-title.scss";
+@import "./components/catalog/details/details.scss";
+@import "./components/catalog/details/details-description.scss";
+@import "./components/catalog/details/details-item.scss";
+@import "./components/catalog/details/details-name.scss";
+@import "./components/catalog/details/details-title.scss";
+//reservation
+@import "./components/reservation/reservation.scss";
+@import "./components/reservation/reservation-btn.scss";
+@import "./components/reservation/reservation-description.scss";
+@import "./components/reservation/reservation-promo.scss";
+@import "./components/reservation/reservation-text.scss";
+@import "./components/reservation/reservation-title.scss";
+@import "./components/reservation/form/form.scss";
+@import "./components/reservation/form/checkbox.scss";
+@import "./components/reservation/form/checkbox-input.scss";
+@import "./components/reservation/form/checkbox-text.scss";
+@import "./components/reservation/form/form-group.scss";
+//info
+@import "./components/info/info.scss";
+@import "./components/info/contacts/contacts.scss";
+@import "./components/info/contacts/contacts-info.scss";
+@import "./components/info/contacts/contacts-title.scss";
+@import "./components/info/map/map.scss";
+

@@ -1,0 +1,40 @@
+.details {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 35px 24px 31px 25px;
+
+  width: 100%;
+  min-height: 386px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+
+  list-style: none;
+
+  background-color: $secondary-color;
+  color: $primary-color;
+
+  display: flex;
+  flex-direction: column;
+
+  font-size: 18px;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all 0.5s;
+}
+
+@media(max-width: $tablet-width) {
+  .details {
+    padding: 35px;
+  }
+}
+
+@media(max-width: $mobile-width) {
+  .details {
+    padding: 28px 25px 39px 26px;
+  }
+}

@@ -1,0 +1,28 @@
+.checkbox__text {
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 23px;
+  min-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    left: 0;
+    background-color: $primary-color;
+  }
+
+  &::after {
+    display: none;
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    left: 0;
+    background: url("../img/icon-check.svg") no-repeat center;
+  }
+}

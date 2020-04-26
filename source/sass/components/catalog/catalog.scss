@@ -1,0 +1,24 @@
+.catalog {
+  box-sizing: border-box;
+  padding: 115px 103px 93px 103px;
+}
+
+@media (max-width: $tablet-width) {
+  .catalog {
+    padding: 87px 60px 55px 60px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .catalog {
+    padding: 30px 25px 3px 25px;
+  }
+}
+
+@media (min-width: $desktop-max-width) {
+  .catalog {
+    padding: 0 calc(50vw - 580px);
+    padding-top: 115px;
+    padding-bottom: 125px;
+  }
+}

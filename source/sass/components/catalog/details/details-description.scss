@@ -1,0 +1,11 @@
+.details__description {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 3px;
+}
+
+@media(max-width: $mobile-width) {
+  .details__description {
+    line-height: 1.5;
+  }
+}

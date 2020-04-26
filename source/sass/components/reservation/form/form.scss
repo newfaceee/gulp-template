@@ -1,0 +1,41 @@
+.form {
+  width: 403px;
+  min-height: 455px;
+  background-color: $secondary-color;
+  box-sizing: border-box;
+  padding: 45px 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+}
+.form input {
+  width: 100%;
+  border: 0;
+  background-color: $primary-color;
+  box-sizing: border-box;
+  padding: 15px;
+  color: $secondary-color;
+  outline: 0;
+
+}
+
+.form input:hover {
+  background-color:#e2e2e2;
+}
+
+.form input:focus {
+  border: 1px solid #345C92;
+}
+
+.form input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: $secondary-color;
+}
+
+
+@media(max-width: $mobile-width) {
+  .form {
+    max-width: 100%;
+    padding: 30px;
+    padding-bottom: 35px;
+  }
+}

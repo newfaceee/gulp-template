@@ -1,0 +1,23 @@
+.reservation__promo {
+  max-width: 493px;
+  margin-right: 144px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $secondary-color;
+}
+
+@media(max-width: $tablet-width) {
+  .reservation__promo {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+}
+
+@media(max-width: $mobile-width) {
+  .reservation__promo {
+    margin-bottom: 30px;
+  }
+}

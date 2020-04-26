@@ -1,0 +1,17 @@
+.details__item {
+  font-size: 14px;
+
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+    margin-top: auto;
+  }
+
+  .details-btn {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

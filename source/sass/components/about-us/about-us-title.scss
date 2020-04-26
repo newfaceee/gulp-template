@@ -1,0 +1,25 @@
+.about-us__title {
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 27px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+@media(max-width: $tablet-width) {
+  .about-us__title {
+    margin: 0;
+    max-width: 230px;
+    margin-bottom: 19px;
+  }
+}
+
+@media(max-width: $mobile-width) {
+  .about-us__title {
+    margin: 0;
+    font-size: 24px;
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+}

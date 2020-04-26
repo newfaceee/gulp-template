@@ -1,0 +1,12 @@
+.about-us__description {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+@media(max-width: $tablet-width) {
+  .about-us__description {
+    line-height: 1.7;
+    letter-spacing: 1.25px;
+  }
+}

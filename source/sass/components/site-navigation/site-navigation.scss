@@ -1,0 +1,26 @@
+.site-navigation {
+  margin: 0;
+  padding: 0;
+
+  width: 594px;
+
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+
+  font-weight: 500;
+}
+
+@media (max-width: $tablet-width) {
+  .site-navigation {
+    max-width: 504px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .site-navigation {
+    max-width: 290px;
+    flex-direction: column;
+  }
+}

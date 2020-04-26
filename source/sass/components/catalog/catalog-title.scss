@@ -1,0 +1,22 @@
+.catalog__title {
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media(max-width: $tablet-width) {
+  .catalog__title {
+    font-size: 26px;
+    margin-bottom: 52px;
+  }
+}
+
+@media(max-width: $mobile-width) {
+  .catalog__title {
+    font-size: 24px;
+    margin-bottom: 29px;
+  }
+}

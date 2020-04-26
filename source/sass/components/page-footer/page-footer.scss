@@ -1,0 +1,31 @@
+.page-footer {
+  box-sizing: border-box;
+  padding: 0 103px;
+  height: 138px;
+  display: flex;
+  align-items: center;
+  background-color: $secondary-color;
+}
+
+@media (max-width: $tablet-width) {
+  .page-footer {
+    padding-left: 45px;
+    padding-right: 45px;
+    height: 120px;
+  }
+}
+
+@media (min-width: $desktop-max-width) {
+  .page-footer {
+    padding: 0 calc(50vw - 580px);
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-footer {
+    height: 283px;
+    padding: 40px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,107 @@
+.main-nav {
+  min-height: 38px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 195px;
+  box-sizing: border-box;
+
+  .main-nav--closed .main-nav__toggle::before {
+    background: url("../../img/icon-burger.svg");
+  }
+
+  .main-nav--opened .main-nav__toggle::before {
+    background: url("../../img/icon-close.svg") no-repeat center;
+  }
+}
+
+@media(max-width: $tablet-width) {
+  .main-nav {
+    min-height: 20px;
+    margin-bottom: 215px;
+
+    .logo {
+      svg {
+        width: 38px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+@media(max-width: $mobile-width) {
+  .main-nav {
+    margin: 0;
+    padding: 20px 15px 0 15px;
+
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    &--closed,
+    &--opened {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 299px;
+    }
+
+    &--closed .site-navigation-item {
+      display: none;
+    }
+
+    &--opened .site-navigation-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--opened {
+      background-color: $primary-color;
+
+      a {
+        color: $secondary-color;
+
+        svg {
+          path {
+            fill: $secondary-color;
+          }
+        }
+      }
+    }
+
+    &--closed + .promo,
+    &--opened + .promo {
+      padding-top: 175px;
+    }
+
+    &--nojs {
+      position: static;
+      background-color: $primary-color;
+
+      a {
+        color: $secondary-color;
+
+        svg {
+          path {
+            fill: $secondary-color;
+          }
+        }
+      }
+    }
+
+    &--nojs .site-navigation-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--nojs .main-nav__toggle {
+      display: none;
+    }
+
+    &--nojs + .promo {
+      padding-top: 0;
+    }
+  }
+}

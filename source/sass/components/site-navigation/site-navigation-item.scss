@@ -1,0 +1,20 @@
+.site-navigation-item {
+  a {
+    text-decoration: none;
+    color: $primary-color;
+  }
+}
+
+.site-navigation-item:hover {
+  opacity: 0.8;
+}
+
+.site-navigation-item:focus {
+  outline: 1px solid #345C92;
+}
+ 
+@media(max-width: $mobile-width) {
+  .site-navigation-item {
+    margin-bottom: 25px;
+  }
+}
